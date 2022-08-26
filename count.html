@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bank.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <h1 class="text-center text-6xl  my-16">
+        Count Your <span id="money">Money</span>
+    </h1>
+</header>
+    <main>
+        <div class="field grid grid-cols-3 w-3/4 mx-auto grid-flow-col gap-4 mt-16">
+            <div class="bg-orange-300 w-3/4 border-2 border-cyan-900 rounded">
+                <h1 class="font-semi-bold text-2xl text-center py-2">Deposit</h1>
+                <h1 class="font-bold text-center text-4xl mb-2 pb-2">$ <span id="deposit-output">00</span></h1>
+            </div>
+            <div class="bg-blue-400 w-3/4 border-2 border-cyan-900 rounded">
+                <h1 class="font-semi-bold text-2xl text-center py-2">Withdraw</h1>
+                <h1 class="font-bold text-center text-4xl mb-2 pb-2">$ <span id="withdraw-output">00</span> </h1>
+            </div>
+            <div class="bg-red-200 w-3/4 border-2 border-cyan-900 rounded">
+                <h1 class="font-semi-bold text-2xl text-center py-2">Balance</h1>
+                <h1 class="font-bold text-center text-4xl mb-2 pb-2">$<span id="balance-output">00</span> </h1>
+            </div>
+            
+        </div>
+        <div class="field grid grid-cols-2 w-3/4 mx-auto grid-flow-col gap-4 mt-16">
+            <div class="bg-green-200  border-2 border-cyan-900 rounded py-4 mx-auto px-4">
+                <h1 class="font-semi-bold text-2xl text-center py-2">Deposit</h1>
+            <input  id="deposit-input" type="number" class=" font-medium px-2 ml-14 py-2  border-2 mx-2  rounded block" placeholder="$Deposit">
+            <button  class="ml-14 my-4 bg-red-500 py-2 px-2 font-medium rounded-lg" id="deposit-btn">Deposit</button>
+        </div>
+            <div class="bg-yellow-200  border-2 border-cyan-900 rounded py-4 mx-auto px-4">
+                <h1 class="font-semi-bold text-2xl text-center py-2">Deposit</h1>
+                <input id="withdraw-input" type="number" class=" font-medium px-2 ml-14 py-2  border-2 mx-2 rounded block" placeholder="$Withdraw">
+                <button  class="ml-14 my-4 bg-green-200 py-2 px-2 font-medium rounded-lg" id="withdraw-btn">Withdraw</button>
+            </div>
+        </div> 
+    </main>
+    <script src="/count.js"></script>
+</body>
+</html>

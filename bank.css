@@ -1,0 +1,9 @@
+.form{
+    width: 40%;
+    height: auto;
+}
+#money{
+    color:rgba(6, 214, 6, 0.87);
+    font-weight: 600;
+    font-family: cooper;
+}
